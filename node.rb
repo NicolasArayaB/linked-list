@@ -10,11 +10,15 @@ class Node
     @value = value
   end
 
-  def p_value
-    p @value
+  def r_value
+    @value
   end
 
   def next_node(pointer)
     @next = pointer
+  end
+
+  def next
+    @next
   end
 end

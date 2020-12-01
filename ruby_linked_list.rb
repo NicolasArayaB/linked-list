@@ -1,10 +1,10 @@
 require_relative "linked_list"
 
 list = LinkedList.new
-for i in 1..rand(10)
+for i in 1..rand(6)
   list.append(rand(100))
 end
-for i in 1..rand(10)
+for i in 1..rand(6)
   list.prepend(rand(100))
 end
 
@@ -14,6 +14,9 @@ list.at(2)
 list.size
 list.pop
 list.size
-list.contains?(rand(5))
 list.find(rand(5))
+list.to_s
+list.insert_at(5, 2)
+list.contains?(5)
+list.remove_at(3)
 list.to_s
